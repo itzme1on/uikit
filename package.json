@@ -1,7 +1,13 @@
 {
-	"name": "@kloktun/uikit",
-	"version": "2.0.0",
-	"description": "KLOKTUN UI Kit for React",
+	"name": "@itzme1on/uikit",
+	"version": "1.0.0",
+	"license": "MIT",
+	"description": "UI Kit for React",
+	"homepage": "https://github.com/itzme1on/uikit",
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
 	"source": "src/index.ts",
 	"type": "module",
 	"main": "lib/index.cjs",
@@ -17,12 +23,14 @@
 		"publish": false,
 		"tests": false
 	},
-	"author": "kloktunov",
-	"license": "MIT",
+	"author": "Alexey Kloktunov <kloktun@gmail.com> (https://github.com/kloktunov)",
+	"contributors": [
+		"itzme1on <47828778+itzme1on@users.noreply.github.com> (https://github.com/itzme1on)"
+	],
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
-		"@tailwindcss/cli": "~4.3.3",
-		"@tailwindcss/postcss": "~4.3.3",
+		"@tailwindcss/cli": "^4.3.3",
+		"@tailwindcss/postcss": "^4.3.3",
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
 		"babel-loader": "^8.3.0",
@@ -30,8 +38,8 @@
 		"postcss": "^8.4.21",
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8",
-		"tailwindcss": "~4.3.3",
-		"typescript": "~5.9.3"
+		"tailwindcss": "^4.3.3",
+		"typescript": "^5.9.3"
 	},
 	"peerDependencies": {
 		"react": "^19.0.0",
