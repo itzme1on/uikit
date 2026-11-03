@@ -228,52 +228,52 @@ export const ThemeStyle = ({ value }: { value: Theme }) => {
 
             :root {
 
-                --kloktun-control-rounded: ${theme.controlRounded};
-                --kloktun-modal-rounded: ${theme.modalRounded};
+                --ui-control-rounded: ${theme.controlRounded};
+                --ui-modal-rounded: ${theme.modalRounded};
             
                 /*
                 ===================
                 STROKE
                 ===================
                 */
-                --kloktun-stroke: ${theme.stroke};
+                --ui-stroke: ${theme.stroke};
             
                 /*
                 ===================
                 FRONT
                 ===================
                 */
-                --kloktun-front: ${theme.front};
-                --kloktun-front-hint: ${theme.frontHint};
-                --kloktun-front-secondary: ${theme.frontSecondary};
+                --ui-front: ${theme.front};
+                --ui-front-hint: ${theme.frontHint};
+                --ui-front-secondary: ${theme.frontSecondary};
             
                 /*
                 ===================
                 BACKGROUND
                 ===================
                 */
-                --kloktun-background: ${theme.background};
-                --kloktun-background-body: ${theme.backgroundBody};
-                --kloktun-background-backdrop: ${theme.backgroundBackdrop};
-                --kloktun-background-hover: ${theme.backgroundHover};
-                --kloktun-background-active: ${theme.backgroundActive};
+                --ui-background: ${theme.background};
+                --ui-background-body: ${theme.backgroundBody};
+                --ui-background-backdrop: ${theme.backgroundBackdrop};
+                --ui-background-hover: ${theme.backgroundHover};
+                --ui-background-active: ${theme.backgroundActive};
             
                 /*
                 ===================
                 PRIMARY
                 ===================
                 */
-                --kloktun-primary: ${theme.primary};
-                --kloktun-primary-front: ${theme.primaryFront};
-                --kloktun-primary-hover: ${theme.primaryHover};
-                --kloktun-primary-active: ${theme.primaryActive};
-                --kloktun-primary-accent-hover: ${theme.primaryAccentHover};
-                --kloktun-primary-accent-active: ${theme.primaryAccentActive};
-                --kloktun-primary-light: ${theme.primaryLight};
+                --ui-primary: ${theme.primary};
+                --ui-primary-front: ${theme.primaryFront};
+                --ui-primary-hover: ${theme.primaryHover};
+                --ui-primary-active: ${theme.primaryActive};
+                --ui-primary-accent-hover: ${theme.primaryAccentHover};
+                --ui-primary-accent-active: ${theme.primaryAccentActive};
+                --ui-primary-light: ${theme.primaryLight};
             
-                --kloktun-primary-plain: ${theme.primaryPlain};
-                --kloktun-primary-plain-hover: ${theme.primaryPlainHover};
-                --kloktun-primary-plain-active: ${theme.primaryPlainActive};
+                --ui-primary-plain: ${theme.primaryPlain};
+                --ui-primary-plain-hover: ${theme.primaryPlainHover};
+                --ui-primary-plain-active: ${theme.primaryPlainActive};
             
             
                 /*
@@ -281,16 +281,16 @@ export const ThemeStyle = ({ value }: { value: Theme }) => {
                 ERROR
                 ===================
                 */
-                --kloktun-error: ${theme.error};
-                --kloktun-error-front: ${theme.errorFront};
-                --kloktun-error-hover: ${theme.errorHover};
-                --kloktun-error-active: ${theme.errorActive};
-                --kloktun-error-light: ${theme.errorLight};
-                --kloktun-error-accent-hover: ${theme.errorAccentHover};
-                --kloktun-error-accent-active: ${theme.errorAccentActive};
-                --kloktun-error-plain: ${theme.errorPlain};
-                --kloktun-error-plain-hover: ${theme.errorPlainHover};
-                --kloktun-error-plain-active: ${theme.errorPlainActive};
+                --ui-error: ${theme.error};
+                --ui-error-front: ${theme.errorFront};
+                --ui-error-hover: ${theme.errorHover};
+                --ui-error-active: ${theme.errorActive};
+                --ui-error-light: ${theme.errorLight};
+                --ui-error-accent-hover: ${theme.errorAccentHover};
+                --ui-error-accent-active: ${theme.errorAccentActive};
+                --ui-error-plain: ${theme.errorPlain};
+                --ui-error-plain-hover: ${theme.errorPlainHover};
+                --ui-error-plain-active: ${theme.errorPlainActive};
             
             
                 /*
@@ -298,16 +298,16 @@ export const ThemeStyle = ({ value }: { value: Theme }) => {
                 WARNING
                 ===================
                 */
-                --kloktun-warning: ${theme.warning};
-                --kloktun-warning-front: ${theme.warningFront};
-                --kloktun-warning-hover: ${theme.warningHover};
-                --kloktun-warning-active: ${theme.warningActive};
-                --kloktun-warning-light: ${theme.warningLight};
-                --kloktun-warning-accent-hover: ${theme.warningAccentHover};
-                --kloktun-warning-accent-active: ${theme.warningAccentActive};
-                --kloktun-warning-plain: ${theme.warningPlain};
-                --kloktun-warning-plain-hover: ${theme.warningPlainHover};
-                --kloktun-warning-plain-active: ${theme.warningPlainActive};
+                --ui-warning: ${theme.warning};
+                --ui-warning-front: ${theme.warningFront};
+                --ui-warning-hover: ${theme.warningHover};
+                --ui-warning-active: ${theme.warningActive};
+                --ui-warning-light: ${theme.warningLight};
+                --ui-warning-accent-hover: ${theme.warningAccentHover};
+                --ui-warning-accent-active: ${theme.warningAccentActive};
+                --ui-warning-plain: ${theme.warningPlain};
+                --ui-warning-plain-hover: ${theme.warningPlainHover};
+                --ui-warning-plain-active: ${theme.warningPlainActive};
             
             
                 /*
@@ -315,22 +315,22 @@ export const ThemeStyle = ({ value }: { value: Theme }) => {
                 SUCCESS
                 ===================
                 */
-                --kloktun-success: ${theme.success};
-                --kloktun-success-front: ${theme.successFront};
-                --kloktun-success-hover: ${theme.successHover};
-                --kloktun-success-active: ${theme.successActive};
-                --kloktun-success-light: ${theme.successLight};
-                --kloktun-success-accent-hover: ${theme.successAccentHover};
-                --kloktun-success-accent-active: ${theme.successAccentActive};
-                --kloktun-success-plain: ${theme.successPlain};
-                --kloktun-success-plain-hover: ${theme.successPlainHover};
-                --kloktun-success-plain-active: ${theme.successPlainActive};
+                --ui-success: ${theme.success};
+                --ui-success-front: ${theme.successFront};
+                --ui-success-hover: ${theme.successHover};
+                --ui-success-active: ${theme.successActive};
+                --ui-success-light: ${theme.successLight};
+                --ui-success-accent-hover: ${theme.successAccentHover};
+                --ui-success-accent-active: ${theme.successAccentActive};
+                --ui-success-plain: ${theme.successPlain};
+                --ui-success-plain-hover: ${theme.successPlainHover};
+                --ui-success-plain-active: ${theme.successPlainActive};
             
             }
 
             body {
-                color: rgb(var(--kloktun-front));
-                background-color: rgb(var(--kloktun-background-body));
+                color: rgb(var(--ui-front));
+                background-color: rgb(var(--ui-background-body));
             }
         `}
 		</style>

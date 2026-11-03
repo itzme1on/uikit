@@ -1,5 +1,5 @@
 // Components
-export { default as KloktunUI } from "./components/wrapper";
+export { default as UIKit } from "./components/wrapper";
 
 export { default as Icon } from "./components/icon";
 export { default as Spinner } from "./components/spinner";

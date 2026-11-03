@@ -9,7 +9,7 @@ interface Props {
 	theme?: Theme;
 }
 
-const KloktunUI: React.FC<Props> = ({ children, theme = LightTheme }) => {
+const UIKit: React.FC<Props> = ({ children, theme = LightTheme }) => {
 	return (
 		<>
 			<OverlayProvider>
@@ -21,4 +21,4 @@ const KloktunUI: React.FC<Props> = ({ children, theme = LightTheme }) => {
 	);
 };
 
-export default KloktunUI;
+export default UIKit;

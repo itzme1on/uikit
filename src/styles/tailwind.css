@@ -26,8 +26,8 @@
 
 	:where(input, textarea, select):where([class^="kl:"],[class*=" kl:"]):-webkit-autofill {
 		border: 0px solid transparent;
-		-webkit-text-fill-color: rgb(var(--kloktun-front, 64, 64, 64)) !important;
-		-webkit-box-shadow: 0 0 0px 1000px rgb(var(--kloktun-background, 255, 255, 255)) inset !important;
+		-webkit-text-fill-color: rgb(var(--ui-front, 64, 64, 64)) !important;
+		-webkit-box-shadow: 0 0 0px 1000px rgb(var(--ui-background, 255, 255, 255)) inset !important;
 		transition: background-color 5000s ease-in-out 0s;
 	}
 
