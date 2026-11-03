@@ -4,6 +4,13 @@
 	"license": "MIT",
 	"description": "UI Kit for React",
 	"homepage": "https://github.com/itzme1on/uikit",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itzme1on/uikit.git"
+	},
+	"bugs": {
+		"url": "https://github.com/itzme1on/uikit/issues"
+	},
 	"publishConfig": {
 		"access": "public",
 		"provenance": true
