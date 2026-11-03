@@ -60,19 +60,19 @@ const Modal = ({
 				return (
 					<div
 						className={classnames(
-							"kl:flex kl:flex-col kl:bg-background kl:rounded-modal kl:shadow-modal kl:m-5",
+							"iui:flex iui:flex-col iui:bg-background iui:rounded-modal iui:shadow-modal iui:m-5",
 							{
-								"kl:max-h-full": scrollType == "paper",
-								"kl:flex-1": scrollType == "body",
+								"iui:max-h-full": scrollType == "paper",
+								"iui:flex-1": scrollType == "body",
 							}
 						)}
 					>
 						{title && (
-							<div className="kl:flex kl:flex-row kl:items-center kl:justify-between">
-								<div className="kl:font-medium kl:text-xl kl:p-4 kl:mr-2">
+							<div className="iui:flex iui:flex-row iui:items-center iui:justify-between">
+								<div className="iui:font-medium iui:text-xl iui:p-4 iui:mr-2">
 									{title}
 								</div>
-								<div className="kl:p-1">
+								<div className="iui:p-1">
 									<IconButton
 										size="large"
 										type="light-borderless"
@@ -85,9 +85,9 @@ const Modal = ({
 
 						<div
 							className={classnames(
-								"kl:flex kl:flex-col kl:px-4 kl:pb-4 kl:flex-1",
+								"iui:flex iui:flex-col iui:px-4 iui:pb-4 iui:flex-1",
 								{
-									"kl:pt-4": !title,
+									"iui:pt-4": !title,
 								}
 							)}
 						>

@@ -59,12 +59,12 @@ const InputIcon = ({
 	return (
 		<div
 			onClick={onClick}
-			className={classnames("kl:cursor-text", {
-				"kl:text-front-hint kl:fill-front-hint": !focus,
-				"kl:text-primary kl:fill-primary": focus,
-				"kl:text-error kl:fill-error": error,
-				"kl:text-warning kl:fill-warning": warning,
-				"kl:text-success kl:fill-success": success,
+			className={classnames("iui:cursor-text", {
+				"iui:text-front-hint iui:fill-front-hint": !focus,
+				"iui:text-primary iui:fill-primary": focus,
+				"iui:text-error iui:fill-error": error,
+				"iui:text-warning iui:fill-warning": warning,
+				"iui:text-success iui:fill-success": success,
 			})}
 		>
 			<Icon size={size} icon={icon}></Icon>
@@ -86,7 +86,7 @@ const InputPrefixSuffix = ({
 	return (
 		<div
 			onClick={onClick}
-			className="kl:text-front-hint kl:flex kl:flex-row kl:items-center kl:max-h-full kl:min-h-full kl:h-full kl:cursor-text kl:control-inject"
+			className="iui:text-front-hint iui:flex iui:flex-row iui:items-center iui:max-h-full iui:min-h-full iui:h-full iui:cursor-text iui:control-inject"
 		>
 			{children}
 		</div>
@@ -112,13 +112,13 @@ const InputPrependAppend = ({
 	return (
 		<div
 			className={classnames(
-				"kl:flex kl:flex-row kl:max-h-full kl:min-h-full kl:h-full kl:items-center kl:transition-all",
+				"iui:flex iui:flex-row iui:max-h-full iui:min-h-full iui:h-full iui:items-center iui:transition-all",
 				{
-					"kl:border-r": type == "prepend",
-					"kl:border-l": type == "append",
+					"iui:border-r": type == "prepend",
+					"iui:border-l": type == "append",
 
-					"kl:border-stroke": !focus,
-					"kl:border-primary": focus,
+					"iui:border-stroke": !focus,
+					"iui:border-primary": focus,
 				}
 			)}
 		>
@@ -278,22 +278,22 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 				onBlur={handleBlur}
 				className={classnames(
 					restProps.className,
-					"kl:editable-control-border kl:flex kl:flex-row kl:items-center kl:outline-hidden kl:ring-0",
+					"iui:editable-control-border iui:flex iui:flex-row iui:items-center iui:outline-hidden iui:ring-0",
 					{
-						"kl:editable-control-border-success": success && !error && !warning,
-						"kl:editable-control-border-error": error && !warning,
-						"kl:editable-control-border-warning": warning,
+						"iui:editable-control-border-success": success && !error && !warning,
+						"iui:editable-control-border-error": error && !warning,
+						"iui:editable-control-border-warning": warning,
 
-						"kl:opacity-50": disabled,
-						"kl:editable-control-background": !fill,
-						"kl:bg-stroke": fill,
+						"iui:opacity-50": disabled,
+						"iui:editable-control-background": !fill,
+						"iui:bg-stroke": fill,
 
 						// Size
-						"kl:control-height-large": size == "large",
-						"kl:control-height-medium": size == "medium",
-						"kl:control-height-default": size == "default",
-						"kl:control-height-small": size == "small",
-						"kl:control-height-mini": size == "mini",
+						"iui:control-height-large": size == "large",
+						"iui:control-height-medium": size == "medium",
+						"iui:control-height-default": size == "default",
+						"iui:control-height-small": size == "small",
+						"iui:control-height-mini": size == "mini",
 					}
 				)}
 			>
@@ -305,22 +305,22 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 
 				<div
 					className={classnames(
-						"kl:flex kl:flex-row kl:gap-3 kl:flex-1 kl:items-center kl:max-h-full kl:min-h-full kl:h-full",
+						"iui:flex iui:flex-row iui:gap-3 iui:flex-1 iui:items-center iui:max-h-full iui:min-h-full iui:h-full",
 						{
-							"kl:pl-2": size == "mini" && !inputZeroPaddingLeft,
-							"kl:pr-2": size == "mini" && !inputZeroPaddingRight,
+							"iui:pl-2": size == "mini" && !inputZeroPaddingLeft,
+							"iui:pr-2": size == "mini" && !inputZeroPaddingRight,
 
-							"kl:pl-2.5": size == "small" && !inputZeroPaddingRight,
-							"kl:pr-2.5": size == "small" && !inputZeroPaddingRight,
+							"iui:pl-2.5": size == "small" && !inputZeroPaddingRight,
+							"iui:pr-2.5": size == "small" && !inputZeroPaddingRight,
 
-							"kl:pl-3": size == "default" && !inputZeroPaddingRight,
-							"kl:pr-3": size == "default" && !inputZeroPaddingRight,
+							"iui:pl-3": size == "default" && !inputZeroPaddingRight,
+							"iui:pr-3": size == "default" && !inputZeroPaddingRight,
 
-							"kl:pl-3.5": size == "medium" && !inputZeroPaddingRight,
-							"kl:pr-3.5": size == "medium" && !inputZeroPaddingRight,
+							"iui:pl-3.5": size == "medium" && !inputZeroPaddingRight,
+							"iui:pr-3.5": size == "medium" && !inputZeroPaddingRight,
 
-							"kl:pl-4": size == "large" && !inputZeroPaddingRight,
-							"kl:pr-4": size == "large" && !inputZeroPaddingRight,
+							"iui:pl-4": size == "large" && !inputZeroPaddingRight,
+							"iui:pr-4": size == "large" && !inputZeroPaddingRight,
 						}
 					)}
 				>
@@ -335,7 +335,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 						{prefixText}
 					</InputPrefixSuffixText>
 
-					<div className="kl:flex kl:flex-row kl:flex-1 kl:max-h-full kl:min-h-full kl:h-full">
+					<div className="iui:flex iui:flex-row iui:flex-1 iui:max-h-full iui:min-h-full iui:h-full">
 						<InputPrefixSuffixPlaceholder onClick={focusInput}>
 							{prefixPlaceholder}
 						</InputPrefixSuffixPlaceholder>
@@ -350,10 +350,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 							onBlur={handleBlur}
 							size={htmlSize}
 							className={classnames(
-								"kl:text-front kl:rounded-control kl:flex-1 kl:max-h-full kl:min-h-full kl:h-full kl:outline-hidden kl:ring-0 kl:placeholder:text-front-hint kl:focus-visible:outline-hidden kl:focus-visible:ring-0 kl:w-0",
+								"iui:text-front iui:rounded-control iui:flex-1 iui:max-h-full iui:min-h-full iui:h-full iui:outline-hidden iui:ring-0 iui:placeholder:text-front-hint iui:focus-visible:outline-hidden iui:focus-visible:ring-0 iui:w-0",
 								{
-									"kl:editable-control-background": !fill,
-									"kl:bg-stroke": fill,
+									"iui:editable-control-background": !fill,
+									"iui:bg-stroke": fill,
 								}
 							)}
 							disabled={disabled}

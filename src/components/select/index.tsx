@@ -119,14 +119,14 @@ const Select = forwardRef(function <T>(
 				minPopoverSize="button"
 			>
 				<div
-					className={classnames("kl:max-h-80 kl:overflow-y-auto", {
-						"kl:py-3": size == "large",
-						"kl:py-2.5": size == "medium",
-						"kl:py-2": size == "default",
-						"kl:py-1.5": size == "small" || size == "mini",
+					className={classnames("iui:max-h-80 iui:overflow-y-auto", {
+						"iui:py-3": size == "large",
+						"iui:py-2.5": size == "medium",
+						"iui:py-2": size == "default",
+						"iui:py-1.5": size == "small" || size == "mini",
 					})}
 				>
-					<div className="kl:flex kl:flex-col kl:h-full">{children}</div>
+					<div className="iui:flex iui:flex-col iui:h-full">{children}</div>
 				</div>
 			</Dropdown>
 		</SelectContext.Provider>
@@ -181,8 +181,8 @@ export function SelectButton<T>({
 	if (!selected) {
 		content = (
 			<span
-				className={classnames("kl:select-none", {
-					"kl:text-front-hint":
+				className={classnames("iui:select-none", {
+					"iui:text-front-hint":
 						type == "default" || type == "borderless" || type == "text",
 				})}
 			>
@@ -205,75 +205,75 @@ export function SelectButton<T>({
 		<div
 			onClick={handleClick}
 			className={classnames(
-				"kl:rounded-control kl:flex kl:flex-row kl:items-center kl:justify-start kl:transition-all kl:duration-200 kl:max-h-full",
+				"iui:rounded-control iui:flex iui:flex-row iui:items-center iui:justify-start iui:transition-all iui:duration-200 iui:max-h-full",
 				type != "text"
 					? {
-							"kl:px-3": size == "large",
-							"kl:px-2.5": size == "medium",
-							"kl:px-2": size == "default",
-							"kl:px-1.5": size == "small" || size == "mini",
+							"iui:px-3": size == "large",
+							"iui:px-2.5": size == "medium",
+							"iui:px-2": size == "default",
+							"iui:px-1.5": size == "small" || size == "mini",
 					  }
 					: null,
 				{
 					// Type
-					"kl:border kl:bg-background  kl:hover:bg-background-hover kl:active:bg-background-active":
+					"iui:border iui:bg-background  iui:hover:bg-background-hover iui:active:bg-background-active":
 						type == "default",
 
 					// Default state
-					"kl:text-front kl:fill-front kl:border-stroke":
+					"iui:text-front iui:fill-front iui:border-stroke":
 						status == "default" &&
 						(type == "default" || type == "text" || type == "borderless"),
-					"kl:text-primary-front kl:fill-primary-front kl:bg-primary kl:hover:bg-primary-accent-hover kl:active:bg-primary-accent-active":
+					"iui:text-primary-front iui:fill-primary-front iui:bg-primary iui:hover:bg-primary-accent-hover iui:active:bg-primary-accent-active":
 						status == "default" && type == "primary",
-					"kl:text-primary kl:fill-primary kl:bg-primary-plain  kl:hover:bg-primary-plain-hover kl:active:bg-primary-plain-active":
+					"iui:text-primary iui:fill-primary iui:bg-primary-plain  iui:hover:bg-primary-plain-hover iui:active:bg-primary-plain-active":
 						status == "default" && type == "plain",
 
 					// Error state
-					"kl:text-error kl:fill-error kl:border-error kl:hover:bg-error-hover kl:active:bg-error-active":
+					"iui:text-error iui:fill-error iui:border-error iui:hover:bg-error-hover iui:active:bg-error-active":
 						status == "error" && type == "default",
-					"kl:text-error-front kl:fill-error-front kl:bg-error kl:hover:bg-error-accent-hover kl:active:bg-error-accent-active":
+					"iui:text-error-front iui:fill-error-front iui:bg-error iui:hover:bg-error-accent-hover iui:active:bg-error-accent-active":
 						status == "error" && type == "primary",
-					"kl:text-error kl:fill-error kl:bg-error-plain kl:hover:bg-error-plain-hover kl:active:bg-error-plain-active":
+					"iui:text-error iui:fill-error iui:bg-error-plain iui:hover:bg-error-plain-hover iui:active:bg-error-plain-active":
 						status == "error" && type == "plain",
-					"kl:text-error kl:fill-error kl:hover:text-error-accent-hover kl:hover:fill-error-accent-hover kl:active:text-error-accent-active kl:active:fill-error-active":
+					"iui:text-error iui:fill-error iui:hover:text-error-accent-hover iui:hover:fill-error-accent-hover iui:active:text-error-accent-active iui:active:fill-error-active":
 						status == "error" && (type == "text" || type == "borderless"),
 
 					// Warning state
-					"kl:text-warning kl:fill-warning kl:border-warning kl:hover:bg-warning-hover kl:active:bg-warning-active":
+					"iui:text-warning iui:fill-warning iui:border-warning iui:hover:bg-warning-hover iui:active:bg-warning-active":
 						status == "warning" && type == "default",
-					"kl:text-warning-front kl:fill-warning-front kl:bg-warning kl:hover:bg-warning-accent-hover kl:active:bg-warning-accent-active":
+					"iui:text-warning-front iui:fill-warning-front iui:bg-warning iui:hover:bg-warning-accent-hover iui:active:bg-warning-accent-active":
 						status == "warning" && type == "primary",
-					"kl:text-warning kl:fill-warning kl:bg-warning-plain kl:hover:bg-warning-plain-hover kl:active:bg-warning-plain-active":
+					"iui:text-warning iui:fill-warning iui:bg-warning-plain iui:hover:bg-warning-plain-hover iui:active:bg-warning-plain-active":
 						status == "warning" && type == "plain",
-					"kl:text-warning kl:fill-warning kl:hover:text-warning-accent-hover kl:hover:fill-warning-accent-hover kl:active:text-warning-accent-active kl:active:fill-warning-active":
+					"iui:text-warning iui:fill-warning iui:hover:text-warning-accent-hover iui:hover:fill-warning-accent-hover iui:active:text-warning-accent-active iui:active:fill-warning-active":
 						status == "warning" && (type == "text" || type == "borderless"),
 
 					// Success state
-					"kl:text-success kl:fill-success kl:border-success kl:hover:bg-success-hover kl:active:bg-success-active":
+					"iui:text-success iui:fill-success iui:border-success iui:hover:bg-success-hover iui:active:bg-success-active":
 						status == "success" && type == "default",
-					"kl:text-success-front kl:fill-success-front kl:bg-success kl:hover:bg-success-accent-hover kl:active:bg-success-accent-active":
+					"iui:text-success-front iui:fill-success-front iui:bg-success iui:hover:bg-success-accent-hover iui:active:bg-success-accent-active":
 						status == "success" && type == "primary",
-					"kl:text-success kl:fill-success kl:bg-success-plain kl:hover:bg-success-plain-hover kl:active:bg-success-plain-active":
+					"iui:text-success iui:fill-success iui:bg-success-plain iui:hover:bg-success-plain-hover iui:active:bg-success-plain-active":
 						status == "success" && type == "plain",
-					"kl:text-success kl:fill-success kl:hover:text-success-accent-hover kl:hover:fill-success-accent-hover kl:active:text-success-accent-active kl:active:fill-success-active":
+					"iui:text-success iui:fill-success iui:hover:text-success-accent-hover iui:hover:fill-success-accent-hover iui:active:text-success-accent-active iui:active:fill-success-active":
 						status == "success" && (type == "text" || type == "borderless"),
 
 					// Size
-					"kl:control-height-large": type != "text" && size == "large",
-					"kl:control-height-medium": type != "text" && size == "medium",
-					"kl:control-height-default": type != "text" && size == "default",
-					"kl:control-height-small": type != "text" && size == "small",
-					"kl:control-height-mini": type != "text" && size == "mini",
+					"iui:control-height-large": type != "text" && size == "large",
+					"iui:control-height-medium": type != "text" && size == "medium",
+					"iui:control-height-default": type != "text" && size == "default",
+					"iui:control-height-small": type != "text" && size == "small",
+					"iui:control-height-mini": type != "text" && size == "mini",
 
-					"kl:gap-3": size == "large",
-					"kl:gap-2.5": size == "medium",
-					"kl:gap-2": size == "default",
-					"kl:gap-1.5": size == "small" || size == "mini",
+					"iui:gap-3": size == "large",
+					"iui:gap-2.5": size == "medium",
+					"iui:gap-2": size == "default",
+					"iui:gap-1.5": size == "small" || size == "mini",
 
 					// Disabled
-					"kl:cursor-not-allowed kl:opacity-50": disabled,
+					"iui:cursor-not-allowed iui:opacity-50": disabled,
 
-					"kl:cursor-pointer": !disabled,
+					"iui:cursor-pointer": !disabled,
 				},
 				className
 			)}
@@ -281,7 +281,7 @@ export function SelectButton<T>({
 			{(icon || selected?.icon) && (
 				<div
 					className={classnames({
-						"kl:text-front-hint kl:fill-front-hint":
+						"iui:text-front-hint iui:fill-front-hint":
 							status == "default" &&
 							(type == "default" || type == "borderless" || type == "text"),
 					})}
@@ -290,14 +290,14 @@ export function SelectButton<T>({
 				</div>
 			)}
 
-			<div className="kl:flex kl:flex-1 kl:flex-row kl:items-center kl:justify-start kl:overflow-hidden kl:text-ellipsis kl:whitespace-nowrap">
+			<div className="iui:flex iui:flex-1 iui:flex-row iui:items-center iui:justify-start iui:overflow-hidden iui:text-ellipsis iui:whitespace-nowrap">
 				{content}
 			</div>
 
 			<div
-				className={classnames("kl:transition-all", {
-					"kl:rotate-180": open,
-					"kl:text-front-hint kl:fill-front-hint":
+				className={classnames("iui:transition-all", {
+					"iui:rotate-180": open,
+					"iui:text-front-hint iui:fill-front-hint":
 						status == "default" &&
 						(type == "default" || type == "borderless" || type == "text"),
 				})}
@@ -365,26 +365,26 @@ const SelectOption = <T = unknown,>(props: SelectOptionProps<T>) => {
 	return (
 		<div
 			className={classnames(
-				"kl:flex kl:flex-row kl:items-center kl:hover:bg-primary-plain",
+				"iui:flex iui:flex-row iui:items-center iui:hover:bg-primary-plain",
 				{
-					"kl:text-primary kl:fill-primary kl:font-medium": selected,
+					"iui:text-primary iui:fill-primary iui:font-medium": selected,
 
-					"kl:px-3 kl:gap-3": size == "large",
-					"kl:px-2.5 kl:gap-2.5": size == "medium",
-					"kl:px-2 kl:gap-2": size == "default",
-					"kl:px-1.5 kl:gap-1.5": size == "small" || size == "mini",
+					"iui:px-3 iui:gap-3": size == "large",
+					"iui:px-2.5 iui:gap-2.5": size == "medium",
+					"iui:px-2 iui:gap-2": size == "default",
+					"iui:px-1.5 iui:gap-1.5": size == "small" || size == "mini",
 
 					// Size
-					"kl:control-height-large": size == "large",
-					"kl:control-height-medium": size == "medium",
-					"kl:control-height-default": size == "default",
-					"kl:control-height-small": size == "small",
-					"kl:control-height-mini": size == "mini",
+					"iui:control-height-large": size == "large",
+					"iui:control-height-medium": size == "medium",
+					"iui:control-height-default": size == "default",
+					"iui:control-height-small": size == "small",
+					"iui:control-height-mini": size == "mini",
 
 					// Disabled
-					"kl:cursor-not-allowed kl:opacity-50": disabled,
+					"iui:cursor-not-allowed iui:opacity-50": disabled,
 
-					"kl:cursor-pointer": !disabled,
+					"iui:cursor-pointer": !disabled,
 				}
 			)}
 			onClick={handleClick}

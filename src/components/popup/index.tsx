@@ -78,7 +78,7 @@ const Popup = ({
 
 		if (typeof children == "string") {
 			return (
-				<div className="kl:flex kl:flex-col kl:text-center">{children}</div>
+				<div className="iui:flex iui:flex-col iui:text-center">{children}</div>
 			);
 		}
 
@@ -107,19 +107,19 @@ const Popup = ({
 				return (
 					<div
 						className={classnames(
-							"kl:flex kl:flex-col kl:min-w-full kl:w-80 kl:max-w-full kl:bg-background kl:rounded-modal kl:shadow-modal kl:p-6 kl:gap-5"
+							"iui:flex iui:flex-col iui:min-w-full iui:w-80 iui:max-w-full iui:bg-background iui:rounded-modal iui:shadow-modal iui:p-6 iui:gap-5"
 						)}
 					>
 						{icon && (
-							<div className="kl:flex kl:flex-row kl:items-center kl:justify-center">
+							<div className="iui:flex iui:flex-row iui:items-center iui:justify-center">
 								<div
 									className={classnames(
-										"kl:w-16 kl:h-16 kl:rounded-full kl:fill-current kl:flex kl:items-center kl:justify-center",
+										"iui:w-16 iui:h-16 iui:rounded-full iui:fill-current iui:flex iui:items-center iui:justify-center",
 										{
-											"kl:text-primary kl:bg-primary-plain": info,
-											"kl:text-success kl:bg-success-plain": success,
-											"kl:text-error kl:bg-error-plain": error || danger,
-											"kl:text-warning kl:bg-warning-plain": warning,
+											"iui:text-primary iui:bg-primary-plain": info,
+											"iui:text-success iui:bg-success-plain": success,
+											"iui:text-error iui:bg-error-plain": error || danger,
+											"iui:text-warning iui:bg-warning-plain": warning,
 										}
 									)}
 								>
@@ -128,13 +128,13 @@ const Popup = ({
 							</div>
 						)}
 
-						<div className="kl:flex kl:flex-col kl:gap-2">
+						<div className="iui:flex iui:flex-col iui:gap-2">
 							{title && (
 								<div
-									className={classnames("kl:font-medium kl:text-xl", {
-										"kl:text-start": titleAlign == "start",
-										"kl:text-center": titleAlign == "center",
-										"kl:text-end": titleAlign == "end",
+									className={classnames("iui:font-medium iui:text-xl", {
+										"iui:text-start": titleAlign == "start",
+										"iui:text-center": titleAlign == "center",
+										"iui:text-end": titleAlign == "end",
 									})}
 								>
 									{title}
@@ -149,9 +149,9 @@ const Popup = ({
 
 						{buttonsArray.length > 0 && (
 							<div
-								className={classnames("kl:grid kl:gap-4", {
-									"kl:grid-cols-1": buttonsDirection == "vertical",
-									"kl:grid-cols-2": buttonsDirection == "horizontal",
+								className={classnames("iui:grid iui:gap-4", {
+									"iui:grid-cols-1": buttonsDirection == "vertical",
+									"iui:grid-cols-2": buttonsDirection == "horizontal",
 								})}
 							>
 								{buttonsArray.map((button, index) => (

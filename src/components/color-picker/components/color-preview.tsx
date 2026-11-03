@@ -12,16 +12,16 @@ const ColorPreview = ({ color, showAlpha = false }: Props) => {
 	const colorWithoutAlpha = hsvaToHex(hsvaColor);
 
 	return (
-		<div className="kl:flex kl:flex-col kl:aspect-square kl:w-6 kl:h-6 kl:border kl:border-stroke kl:overflow-hidden kl:rounded-md">
+		<div className="iui:flex iui:flex-col iui:aspect-square iui:w-6 iui:h-6 iui:border iui:border-stroke iui:overflow-hidden iui:rounded-md">
 			<div
-				className="kl:w-full kl:flex-1"
+				className="iui:w-full iui:flex-1"
 				style={{
 					backgroundColor: colorWithoutAlpha,
 				}}
 			></div>
 			{showAlpha && (
 				<div
-					className="kl:w-full kl:flex-1"
+					className="iui:w-full iui:flex-1"
 					style={{
 						backgroundColor: color,
 					}}

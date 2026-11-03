@@ -34,9 +34,9 @@ const SliderThumb: React.FC<SliderThumbProps> = ({
 	return (
 		<div
 			className={classnames(
-				"kl:rounded-full kl:border-2 kl:border-primary kl:bg-background",
+				"iui:rounded-full iui:border-2 iui:border-primary iui:bg-background",
 				{
-					"kl:w-5 kl:h-5": !hasSize,
+					"iui:w-5 iui:h-5": !hasSize,
 				}
 			)}
 			style={sizeStyle}
@@ -210,19 +210,19 @@ const Slider = ({
 	return (
 		<div
 			className={classnames(
-				"kl:relative kl:flex kl:flex-col kl:w-full kl:justify-center kl:control-height-default",
+				"iui:relative iui:flex iui:flex-col iui:w-full iui:justify-center iui:control-height-default",
 				{
-					"kl:cursor-pointer": !disabled,
-					"kl:opacity-50": disabled,
-					"kl:group/slider": showThumbOnHover,
+					"iui:cursor-pointer": !disabled,
+					"iui:opacity-50": disabled,
+					"iui:group/slider": showThumbOnHover,
 				}
 			)}
 			onClick={handleClick}
 			ref={sliderRef}
 		>
-			<div className="kl:flex kl:flex-col kl:w-full kl:bg-stroke kl:h-1 kl:rounded-full kl:overflow-hidden">
+			<div className="iui:flex iui:flex-col iui:w-full iui:bg-stroke iui:h-1 iui:rounded-full iui:overflow-hidden">
 				<div
-					className="kl:h-full kl:rounded-full kl:bg-primary"
+					className="iui:h-full iui:rounded-full iui:bg-primary"
 					style={{ width: `${percentage}%` }}
 				/>
 			</div>
@@ -230,9 +230,9 @@ const Slider = ({
 			<div
 				ref={thumbRef}
 				className={classnames(
-					"kl:absolute kl:flex kl:items-center kl:justify-center kl:h-full",
+					"iui:absolute iui:flex iui:items-center iui:justify-center iui:h-full",
 					{
-						"kl:scale-0 kl:pointer-events-none kl:transition-transform kl:duration-150 kl:group-hover/slider:scale-100 kl:group-hover/slider:pointer-events-auto kl:group-focus-within/slider:scale-100 kl:group-focus-within/slider:pointer-events-auto": showThumbOnHover,
+						"iui:scale-0 iui:pointer-events-none iui:transition-transform iui:duration-150 iui:group-hover/slider:scale-100 iui:group-hover/slider:pointer-events-auto iui:group-focus-within/slider:scale-100 iui:group-focus-within/slider:pointer-events-auto": showThumbOnHover,
 					}
 				)}
 				style={{ left: `${percentage}%`, marginLeft: `${thumbLeftOffset}px` }}

@@ -42,7 +42,7 @@ const OverlayChildren = (props: Props) => {
 	return (
 		<div
 			className={classnames(
-				"kl:flex kl:flex-col kl:fixed kl:top-0 kl:left-0 kl:bottom-0 kl:right-0"
+				"iui:flex iui:flex-col iui:fixed iui:top-0 iui:left-0 iui:bottom-0 iui:right-0"
 			)}
 		>
 			{el()}

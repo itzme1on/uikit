@@ -12,11 +12,11 @@ const Shimmer = ({ width, height, borderRadius, className }: Props) => {
 	return (
 		<div
 			className={classNames(
-				"kl:animate-pulse kl:bg-stroke/70",
+				"iui:animate-pulse iui:bg-stroke/70",
 				{
-					"kl:w-full": !width,
-					"kl:h-full": !height,
-					"kl:rounded-control": !borderRadius,
+					"iui:w-full": !width,
+					"iui:h-full": !height,
+					"iui:rounded-control": !borderRadius,
 				},
 				className
 			)}

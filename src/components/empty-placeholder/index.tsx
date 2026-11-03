@@ -9,18 +9,18 @@ interface Props {
 
 const EmptyPlaceholder = ({ icon, children, action }: Props) => {
 	return (
-		<div className="kl:flex kl:flex-col kl:gap-5 kl:items-center kl:justify-center kl:px-4">
+		<div className="iui:flex iui:flex-col iui:gap-5 iui:items-center iui:justify-center iui:px-4">
 			{icon && (
-				<span className="kl:text-front-hint">
+				<span className="iui:text-front-hint">
 					<Icon icon={icon} size="huge" />
 				</span>
 			)}
 
-			<div className="kl:text-front-secondary kl:text-center kl:max-w-md">
+			<div className="iui:text-front-secondary iui:text-center iui:max-w-md">
 				{children}
 			</div>
 
-			{action && <div className="kl:flex kl:flex-col kl:gap-2">{action}</div>}
+			{action && <div className="iui:flex iui:flex-col iui:gap-2">{action}</div>}
 		</div>
 	);
 };

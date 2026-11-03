@@ -45,19 +45,19 @@ const Tab = ({
 		<div
 			onClick={handleClick}
 			className={classNames(
-				"kl:group kl:relative kl:flex kl:flex-row kl:items-center kl:justify-center kl:h-14 kl:gap-2 kl:px-3",
+				"iui:group iui:relative iui:flex iui:flex-row iui:items-center iui:justify-center iui:h-14 iui:gap-2 iui:px-3",
 				{
-					"kl:w-full kl:flex-1": expanded,
-					"kl:opacity-50 kl:pointer-events-none": disabled,
-					"kl:cursor-pointer": !disabled,
-					"kl:text-front-secondary kl:hover:text-front": !active,
+					"iui:w-full iui:flex-1": expanded,
+					"iui:opacity-50 iui:pointer-events-none": disabled,
+					"iui:cursor-pointer": !disabled,
+					"iui:text-front-secondary iui:hover:text-front": !active,
 				}
 			)}
 		>
 			{prefix}
 			{icon && <Icon icon={icon} />}
 
-			<span className={classNames("kl:whitespace-nowrap kl:font-medium")}>
+			<span className={classNames("iui:whitespace-nowrap iui:font-medium")}>
 				{label}
 			</span>
 
@@ -66,13 +66,13 @@ const Tab = ({
 
 			<div
 				className={classNames(
-					"kl:absolute kl:bottom-0 kl:h-0.5 kl:rounded-xs kl:rounded-bl-none kl:rounded-br-none",
+					"iui:absolute iui:bottom-0 iui:h-0.5 iui:rounded-xs iui:rounded-bl-none iui:rounded-br-none",
 					{
-						"kl:left-1/2 kl:-translate-x-1/2 kl:w-5":
+						"iui:left-1/2 iui:-translate-x-1/2 iui:w-5":
 							underlineStyle == "default" || underlineStyle == undefined,
-						"kl:left-3 kl:right-3": underlineStyle == "full-width",
-						"kl:bg-primary": active,
-						"kl:bg-transparent kl:group-hover:bg-stroke": !active,
+						"iui:left-3 iui:right-3": underlineStyle == "full-width",
+						"iui:bg-primary": active,
+						"iui:bg-transparent iui:group-hover:bg-stroke": !active,
 					}
 				)}
 			></div>

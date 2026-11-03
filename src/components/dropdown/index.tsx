@@ -8,7 +8,7 @@ const Dropdown = (props: Props) => {
 	return (
 		<Popover
 			{...props}
-			popoverClassName="kl:flex kl:flex-col kl:border kl:border-stroke kl:bg-background kl:rounded-control kl:overflow-hidden"
+			popoverClassName="iui:flex iui:flex-col iui:border iui:border-stroke iui:bg-background iui:rounded-control iui:overflow-hidden"
 		/>
 	);
 };

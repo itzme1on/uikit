@@ -1,22 +1,22 @@
 @layer theme, base, components, utilities;
 
-@import "tailwindcss/theme.css" layer(theme) prefix(kl);
-@import "tailwindcss/utilities.css" layer(utilities) prefix(kl) important source(none);
+@import "tailwindcss/theme.css" layer(theme) prefix(iui);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(iui) important source(none);
 @import "../tailwind/theme.css";
 
 @source "../components";
 @source "../icons";
-@source inline("kl:control-rounded kl:control-border-color kl:editable-control-placeholder");
+@source inline("iui:control-rounded iui:control-border-color iui:editable-control-placeholder");
 
 @layer base {
-	:where([class^="kl:"],[class*=" kl:"]) {
+	:where([class^="iui:"],[class*=" iui:"]) {
 		box-sizing: border-box;
 		border: 0 solid;
 		margin: 0;
 		padding: 0;
 	}
 
-	:where(button, input, select, textarea):where([class^="kl:"],[class*=" kl:"]) {
+	:where(button, input, select, textarea):where([class^="iui:"],[class*=" iui:"]) {
 		font: inherit;
 		letter-spacing: inherit;
 		color: inherit;
@@ -24,42 +24,42 @@
 		border-radius: 0;
 	}
 
-	:where(input, textarea, select):where([class^="kl:"],[class*=" kl:"]):-webkit-autofill {
+	:where(input, textarea, select):where([class^="iui:"],[class*=" iui:"]):-webkit-autofill {
 		border: 0px solid transparent;
 		-webkit-text-fill-color: rgb(var(--ui-front, 64, 64, 64)) !important;
 		-webkit-box-shadow: 0 0 0px 1000px rgb(var(--ui-background, 255, 255, 255)) inset !important;
 		transition: background-color 5000s ease-in-out 0s;
 	}
 
-	:where(input):where([class^="kl:"],[class*=" kl:"])::-webkit-outer-spin-button,
-	:where(input):where([class^="kl:"],[class*=" kl:"])::-webkit-inner-spin-button {
+	:where(input):where([class^="iui:"],[class*=" iui:"])::-webkit-outer-spin-button,
+	:where(input):where([class^="iui:"],[class*=" iui:"])::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
 	}
 
-	:where(input[type="number"]):where([class^="kl:"],[class*=" kl:"]) {
+	:where(input[type="number"]):where([class^="iui:"],[class*=" iui:"]) {
 		-moz-appearance: textfield;
 	}
 }
 
 @utility control-height-large {
-	@apply kl:h-12;
+	@apply iui:h-12;
 }
 
 @utility control-height-medium {
-	@apply kl:h-11;
+	@apply iui:h-11;
 }
 
 @utility control-height-default {
-	@apply kl:h-10;
+	@apply iui:h-10;
 }
 
 @utility control-height-small {
-	@apply kl:h-9;
+	@apply iui:h-9;
 }
 
 @utility control-height-mini {
-	@apply kl:h-8;
+	@apply iui:h-8;
 }
 
 @utility icon {
@@ -73,40 +73,40 @@
 }
 
 @utility control-rounded {
-	@apply kl:rounded-xl;
+	@apply iui:rounded-xl;
 }
 
 @utility control-border-color {
-	@apply kl:border-stroke;
+	@apply iui:border-stroke;
 }
 
 @utility editable-control-border {
-	@apply kl:rounded-control;
-	@apply kl:border kl:border-stroke kl:focus:border-primary kl:focus-within:border-primary;
-	@apply kl:duration-300;
-	@apply kl:outline-hidden;
-	@apply kl:ring-0;
+	@apply iui:rounded-control;
+	@apply iui:border iui:border-stroke iui:focus:border-primary iui:focus-within:border-primary;
+	@apply iui:duration-300;
+	@apply iui:outline-hidden;
+	@apply iui:ring-0;
 	transition-property: border-color;
 }
 
 @utility editable-control-border-success {
-	@apply kl:border-success kl:focus:border-success kl:focus-within:border-success;
+	@apply iui:border-success iui:focus:border-success iui:focus-within:border-success;
 }
 
 @utility editable-control-border-error {
-	@apply kl:border-error kl:focus:border-error kl:focus-within:border-error;
+	@apply iui:border-error iui:focus:border-error iui:focus-within:border-error;
 }
 
 @utility editable-control-border-warning {
-	@apply kl:border-warning kl:focus:border-warning kl:focus-within:border-warning;
+	@apply iui:border-warning iui:focus:border-warning iui:focus-within:border-warning;
 }
 
 @utility editable-control-placeholder {
-	@apply kl:placeholder:text-front-hint;
+	@apply iui:placeholder:text-front-hint;
 }
 
 @utility editable-control-background {
-	@apply kl:bg-background;
+	@apply iui:bg-background;
 }
 
 @utility icon-control-size-large {
@@ -146,7 +146,7 @@
 
 @utility control-inject {
 	& > * {
-		@apply kl:max-h-full;
+		@apply iui:max-h-full;
 	}
 }
 

@@ -39,7 +39,7 @@ const HexInput = ({ color, onChange }: Props) => {
 	return (
 		<Input
 			size="large"
-			className="kl:flex-1 kl:w-full"
+			className="iui:flex-1 iui:w-full"
 			prefixIcon={<ColorPreview color={color} />}
 			value={value}
 			htmlSize={9}

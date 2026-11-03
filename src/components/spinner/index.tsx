@@ -34,7 +34,7 @@ const Spinner = ({ size = "default", icon }: Props) => {
 	return (
 		<div
 			className={classnames(
-				"kl:flex kl:items-center kl:justify-center kl:animate-spin"
+				"iui:flex iui:items-center iui:justify-center iui:animate-spin"
 			)}
 		>
 			<Icon size={size} icon={icon ? icon : DefaultSpinner} />

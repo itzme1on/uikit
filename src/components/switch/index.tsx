@@ -18,27 +18,27 @@ const Switch = ({ value, onChange, disabled }: Props) => {
 		<div
 			onClick={handleClick}
 			className={classNames(
-				" kl:w-10 kl:h-10 kl:aspect-square kl:flex kl:flex-col kl:items-center kl:justify-center kl:shrink kl:cursor-pointer",
+				" iui:w-10 iui:h-10 iui:aspect-square iui:flex iui:flex-col iui:items-center iui:justify-center iui:shrink iui:cursor-pointer",
 				{
-					"kl:opacity-50 kl:cursor-not-allowed": disabled,
+					"iui:opacity-50 iui:cursor-not-allowed": disabled,
 				}
 			)}
 		>
 			<div
 				className={classNames(
-					"kl:relative kl:w-10 kl:h-6 kl:rounded-full kl:transition-all kl:duration-300",
+					"iui:relative iui:w-10 iui:h-6 iui:rounded-full iui:transition-all iui:duration-300",
 					{
-						"kl:bg-primary": value,
-						"kl:bg-stroke": !value,
+						"iui:bg-primary": value,
+						"iui:bg-stroke": !value,
 					}
 				)}
 			>
 				<div
 					className={classNames(
-						"kl:absolute kl:aspect-square kl:w-5 kl:h-5 kl:mt-0.5 kl:rounded-full kl:transition-all kl:duration-300",
+						"iui:absolute iui:aspect-square iui:w-5 iui:h-5 iui:mt-0.5 iui:rounded-full iui:transition-all iui:duration-300",
 						{
-							"kl:ml-[18px] kl:bg-primary-front": value,
-							"kl:ml-0.5 kl:bg-background": !value,
+							"iui:ml-[18px] iui:bg-primary-front": value,
+							"iui:ml-0.5 iui:bg-background": !value,
 						}
 					)}
 				></div>

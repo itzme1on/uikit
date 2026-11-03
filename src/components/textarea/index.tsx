@@ -112,18 +112,18 @@ const Textarea = forwardRef<HTMLTextAreaElement, Props>(
 				{...restProps}
 				className={classnames(
 					restProps.className,
-					"kl:rounded-control kl:editable-control-border kl:editable-control-background kl:resize-none kl:placeholder:text-front-hint",
+					"iui:rounded-control iui:editable-control-border iui:editable-control-background iui:resize-none iui:placeholder:text-front-hint",
 					{
-						"kl:editable-control-border-success": success && !error && !warning,
-						"kl:editable-control-border-error": error && !warning,
-						"kl:editable-control-border-warning": warning,
-						"kl:opacity-50": disabled,
+						"iui:editable-control-border-success": success && !error && !warning,
+						"iui:editable-control-border-error": error && !warning,
+						"iui:editable-control-border-warning": warning,
+						"iui:opacity-50": disabled,
 
-						"kl:px-3 kl:py-3": size == "large",
-						"kl:px-3 kl:py-2.5": size == "medium",
-						"kl:px-3 kl:py-2": size == "default",
-						"kl:px-2.5 kl:py-1.5": size == "small",
-						"kl:px-2 kl:py-1": size == "mini",
+						"iui:px-3 iui:py-3": size == "large",
+						"iui:px-3 iui:py-2.5": size == "medium",
+						"iui:px-3 iui:py-2": size == "default",
+						"iui:px-2.5 iui:py-1.5": size == "small",
+						"iui:px-2 iui:py-1": size == "mini",
 					}
 				)}
 				disabled={disabled}

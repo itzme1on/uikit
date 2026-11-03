@@ -17,27 +17,27 @@ const Helper = ({ children, text, error, suffix }: HelperProps) => {
 	const showHelper = hasContent || hasSuffix;
 
 	return (
-		<div className="kl:flex kl:flex-col kl:gap-1">
+		<div className="iui:flex iui:flex-col iui:gap-1">
 			{children}
 
 			{showHelper && (
 				<div
 					className={classnames(
-						"kl:flex kl:flex-row kl:text-xs kl:items-center kl:justify-between kl:gap-1",
+						"iui:flex iui:flex-row iui:text-xs iui:items-center iui:justify-between iui:gap-1",
 						{
-							"kl:text-front-hint kl:fill-front-hint": !hasError,
-							"kl:text-error kl:fill-error": hasError,
+							"iui:text-front-hint iui:fill-front-hint": !hasError,
+							"iui:text-error iui:fill-error": hasError,
 						}
 					)}
 				>
 					{hasContent && (
-						<div className="kl:flex kl:flex-row kl:items-center kl:gap-1">
+						<div className="iui:flex iui:flex-row iui:items-center iui:gap-1">
 							{content}
 						</div>
 					)}
 
 					{hasSuffix && (
-						<div className="kl:flex kl:flex-row kl:items-center">{suffix}</div>
+						<div className="iui:flex iui:flex-row iui:items-center">{suffix}</div>
 					)}
 				</div>
 			)}

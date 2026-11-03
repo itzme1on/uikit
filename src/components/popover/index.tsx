@@ -108,7 +108,7 @@ const Popover = ({
 						...floatingStyles,
 						minWidth: `${minFloatingWidth}px`,
 					}}
-					className={classNames("kl:z-[1]")}
+					className={classNames("iui:z-[1]")}
 				>
 					<div style={styles} className={popoverClassName}>
 						{children}

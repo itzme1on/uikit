@@ -18,7 +18,7 @@ const InputColorPickerPreview = ({
 	return (
 		<div
 			onClick={onClick}
-			className="kl:aspect-square kl:w-full kl:h-full kl:rounded-md kl:border kl:border-stroke kl:cursor-pointer"
+			className="iui:aspect-square iui:w-full iui:h-full iui:rounded-md iui:border iui:border-stroke iui:cursor-pointer"
 			style={{ backgroundColor: color }}
 		></div>
 	);

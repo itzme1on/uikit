@@ -64,47 +64,47 @@ const IconButton = ({
 			{...restProps}
 			disabled={disabled || loading}
 			className={classnames(
-				"kl:rounded-control kl:flex kl:flex-row kl:items-center kl:justify-center kl:transition-all kl:duration-200",
+				"iui:rounded-control iui:flex iui:flex-row iui:items-center iui:justify-center iui:transition-all iui:duration-200",
 				{
 					// Not text
-					"kl:aspect-square": !isText,
+					"iui:aspect-square": !isText,
 
 					// Type
-					"kl:bg-background kl:border": type == "default" || type == "outline",
+					"iui:bg-background iui:border": type == "default" || type == "outline",
 
 					// Default state
-					"kl:text-front kl:fill-front kl:border-stroke":
+					"iui:text-front iui:fill-front iui:border-stroke":
 						status == "default" &&
 						(type == "default" || type == "borderless" || type == "text"),
-					"kl:hover:bg-background-hover kl:active:bg-background-active":
+					"iui:hover:bg-background-hover iui:active:bg-background-active":
 						status == "default" && type == "default",
-					"kl:text-primary-front kl:fill-primary-front kl:bg-primary kl:hover:bg-primary-accent-hover kl:active:bg-primary-accent-active":
+					"iui:text-primary-front iui:fill-primary-front iui:bg-primary iui:hover:bg-primary-accent-hover iui:active:bg-primary-accent-active":
 						status == "default" && type == "primary",
-					"kl:text-primary kl:fill-primary kl:border-primary kl:hover:bg-primary-hover kl:active:bg-primary-active":
+					"iui:text-primary iui:fill-primary iui:border-primary iui:hover:bg-primary-hover iui:active:bg-primary-active":
 						status == "default" && type == "outline",
-					"kl:text-primary kl:fill-primary kl:bg-primary-plain kl:hover:bg-primary-plain-hover kl:active:bg-primary-plain-active":
+					"iui:text-primary iui:fill-primary iui:bg-primary-plain iui:hover:bg-primary-plain-hover iui:active:bg-primary-plain-active":
 						status == "default" && type == "plain",
-					"kl:text-primary kl:fill-primary kl:hover:text-primary-accent-hover kl:hover:fill-primary-accent-hover kl:active:text-primary-accent-active kl:active:fill-primary-accent-active":
+					"iui:text-primary iui:fill-primary iui:hover:text-primary-accent-hover iui:hover:fill-primary-accent-hover iui:active:text-primary-accent-active iui:active:fill-primary-accent-active":
 						status == "default" &&
 						(type == "primary-borderless" || type == "primary-text"),
-					"kl:text-front-hint kl:fill-front-hint kl:hover:text-front kl:hover:fill-front kl:active:text-front kl:active:fill-front":
+					"iui:text-front-hint iui:fill-front-hint iui:hover:text-front iui:hover:fill-front iui:active:text-front iui:active:fill-front":
 						status == "default" &&
 						(type == "light-borderless" || type == "light-text"),
-					"kl:text-primary-light kl:fill-primary-light kl:hover:text-primary kl:hover:fill-primary kl:active:text-primary-accent-active kl:active:fill-primary-accent-active":
+					"iui:text-primary-light iui:fill-primary-light iui:hover:text-primary iui:hover:fill-primary iui:active:text-primary-accent-active iui:active:fill-primary-accent-active":
 						status == "default" &&
 						(type == "primary-light-borderless" ||
 							type == "primary-light-text"),
 
 					// Error state
-					"kl:text-error kl:fill-error kl:border-error-light kl:hover:bg-error-hover kl:active:bg-error-active":
+					"iui:text-error iui:fill-error iui:border-error-light iui:hover:bg-error-hover iui:active:bg-error-active":
 						status == "error" && type == "default",
-					"kl:text-error kl:fill-error kl:border-error kl:hover:bg-error-hover kl:active:bg-error-active":
+					"iui:text-error iui:fill-error iui:border-error iui:hover:bg-error-hover iui:active:bg-error-active":
 						status == "error" && type == "outline",
-					"kl:text-error-front kl:fill-error-front kl:bg-error kl:hover:bg-error-accent-hover kl:active:bg-error-accent-active":
+					"iui:text-error-front iui:fill-error-front iui:bg-error iui:hover:bg-error-accent-hover iui:active:bg-error-accent-active":
 						status == "error" && type == "primary",
-					"kl:text-error kl:fill-error kl:bg-error-plain kl:hover:bg-error-plain-hover kl:active:bg-error-plain-active":
+					"iui:text-error iui:fill-error iui:bg-error-plain iui:hover:bg-error-plain-hover iui:active:bg-error-plain-active":
 						status == "error" && type == "plain",
-					"kl:text-error kl:fill-error kl:hover:text-error-accent-hover kl:hover:fill-error-accent-hover kl:active:text-error-accent-active kl:active:fill-error-accent-active":
+					"iui:text-error iui:fill-error iui:hover:text-error-accent-hover iui:hover:fill-error-accent-hover iui:active:text-error-accent-active iui:active:fill-error-accent-active":
 						status == "error" &&
 						(type == "text" ||
 							type == "borderless" ||
@@ -112,20 +112,20 @@ const IconButton = ({
 							type == "primary-text" ||
 							type == "primary-light-borderless" ||
 							type == "primary-light-text"),
-					"kl:text-front-hint kl:fill-front-hint kl:hover:text-error-accent-hover kl:hover:fill-error-accent-hover kl:active:text-error-accent-active kl:active:fill-error-accent-active":
+					"iui:text-front-hint iui:fill-front-hint iui:hover:text-error-accent-hover iui:hover:fill-error-accent-hover iui:active:text-error-accent-active iui:active:fill-error-accent-active":
 						status == "error" &&
 						(type == "light-borderless" || type == "light-text"),
 
 					// Warning state
-					"kl:text-warning kl:fill-warning kl:border-warning-light kl:hover:bg-warning-hover kl:active:bg-warning-active":
+					"iui:text-warning iui:fill-warning iui:border-warning-light iui:hover:bg-warning-hover iui:active:bg-warning-active":
 						status == "warning" && type == "default",
-					"kl:text-warning kl:fill-warning kl:border-warning kl:hover:bg-warning-hover kl:active:bg-warning-active":
+					"iui:text-warning iui:fill-warning iui:border-warning iui:hover:bg-warning-hover iui:active:bg-warning-active":
 						status == "warning" && type == "outline",
-					"kl:text-warning-front kl:fill-warning-front kl:bg-warning kl:hover:bg-warning-accent-hover kl:active:bg-warning-accent-active":
+					"iui:text-warning-front iui:fill-warning-front iui:bg-warning iui:hover:bg-warning-accent-hover iui:active:bg-warning-accent-active":
 						status == "warning" && type == "primary",
-					"kl:text-warning kl:fill-warning kl:bg-warning-plain kl:hover:bg-warning-plain-hover kl:active:bg-warning-plain-active":
+					"iui:text-warning iui:fill-warning iui:bg-warning-plain iui:hover:bg-warning-plain-hover iui:active:bg-warning-plain-active":
 						status == "warning" && type == "plain",
-					"kl:text-warning kl:fill-warning kl:hover:text-warning-accent-hover kl:hover:fill-warning-accent-hover kl:active:text-warning-accent-active kl:active:fill-warning-accent-active":
+					"iui:text-warning iui:fill-warning iui:hover:text-warning-accent-hover iui:hover:fill-warning-accent-hover iui:active:text-warning-accent-active iui:active:fill-warning-accent-active":
 						status == "warning" &&
 						(type == "text" ||
 							type == "borderless" ||
@@ -133,20 +133,20 @@ const IconButton = ({
 							type == "primary-text" ||
 							type == "primary-light-borderless" ||
 							type == "primary-light-text"),
-					"kl:text-front-hint kl:fill-front-hint kl:hover:text-warning-accent-hover kl:hover:fill-warning-accent-hover kl:active:text-warning-accent-active kl:active:fill-warning-accent-active":
+					"iui:text-front-hint iui:fill-front-hint iui:hover:text-warning-accent-hover iui:hover:fill-warning-accent-hover iui:active:text-warning-accent-active iui:active:fill-warning-accent-active":
 						status == "warning" &&
 						(type == "light-borderless" || type == "light-text"),
 
 					// Success state
-					"kl:text-success kl:fill-success kl:border-success-light kl:hover:bg-success-hover kl:active:bg-success-active":
+					"iui:text-success iui:fill-success iui:border-success-light iui:hover:bg-success-hover iui:active:bg-success-active":
 						status == "success" && type == "default",
-					"kl:text-success kl:fill-success kl:border-success kl:hover:bg-success-hover kl:active:bg-success-active":
+					"iui:text-success iui:fill-success iui:border-success iui:hover:bg-success-hover iui:active:bg-success-active":
 						status == "success" && type == "outline",
-					"kl:text-success-front kl:fill-success-front kl:bg-success kl:hover:bg-success-accent-hover kl:active:bg-success-accent-active":
+					"iui:text-success-front iui:fill-success-front iui:bg-success iui:hover:bg-success-accent-hover iui:active:bg-success-accent-active":
 						status == "success" && type == "primary",
-					"kl:text-success kl:fill-success kl:bg-success-plain kl:hover:bg-success-plain-hover kl:active:bg-success-plain-active":
+					"iui:text-success iui:fill-success iui:bg-success-plain iui:hover:bg-success-plain-hover iui:active:bg-success-plain-active":
 						status == "success" && type == "plain",
-					"kl:text-success kl:fill-success kl:hover:text-success-accent-hover kl:hover:fill-success-accent-hover kl:active:text-success-accent-active kl:active:fill-success-accent-active":
+					"iui:text-success iui:fill-success iui:hover:text-success-accent-hover iui:hover:fill-success-accent-hover iui:active:text-success-accent-active iui:active:fill-success-accent-active":
 						status == "success" &&
 						(type == "text" ||
 							type == "borderless" ||
@@ -154,26 +154,26 @@ const IconButton = ({
 							type == "primary-text" ||
 							type == "primary-light-borderless" ||
 							type == "primary-light-text"),
-					"kl:text-front-hint kl:fill-front-hint kl:hover:text-success-accent-hover kl:hover:fill-success-accent-hover kl:active:text-success-accent-active kl:active:fill-success-accent-active":
+					"iui:text-front-hint iui:fill-front-hint iui:hover:text-success-accent-hover iui:hover:fill-success-accent-hover iui:active:text-success-accent-active iui:active:fill-success-accent-active":
 						status == "success" &&
 						(type == "light-borderless" || type == "light-text"),
 
 					// Size
-					"kl:icon-control-size-large": !isText && size == "large",
-					"kl:icon-control-size-medium": !isText && size == "medium",
-					"kl:icon-control-size-default": !isText && size == "default",
-					"kl:icon-control-size-small": !isText && size == "small",
-					"kl:icon-control-size-mini": !isText && size == "mini",
+					"iui:icon-control-size-large": !isText && size == "large",
+					"iui:icon-control-size-medium": !isText && size == "medium",
+					"iui:icon-control-size-default": !isText && size == "default",
+					"iui:icon-control-size-small": !isText && size == "small",
+					"iui:icon-control-size-mini": !isText && size == "mini",
 
 					// Loading | Disabled
-					"kl:opacity-50": loading || disabled,
-					"kl:cursor-pointer": !loading && !disabled,
+					"iui:opacity-50": loading || disabled,
+					"iui:cursor-pointer": !loading && !disabled,
 
 					// Loading
-					"kl:cursor-wait": loading,
+					"iui:cursor-wait": loading,
 
 					// Disabled
-					"kl:cursor-not-allowed": disabled,
+					"iui:cursor-not-allowed": disabled,
 				},
 				restProps.className
 			)}

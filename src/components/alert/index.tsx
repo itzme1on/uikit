@@ -25,31 +25,31 @@ const Alert = ({
 	return (
 		<div
 			className={classnames(
-				"kl:flex kl:flex-row kl:items-center kl:justify-start kl:p-4 kl:gap-3 kl:rounded-control",
+				"iui:flex iui:flex-row iui:items-center iui:justify-start iui:p-4 iui:gap-3 iui:rounded-control",
 				{
-					"kl:bg-background kl:border kl:border-stroke": isDefault,
-					"kl:text-success kl:bg-success-plain": success,
-					"kl:text-error kl:bg-error-plain": error,
-					"kl:text-warning kl:bg-warning-plain": warning,
+					"iui:bg-background iui:border iui:border-stroke": isDefault,
+					"iui:text-success iui:bg-success-plain": success,
+					"iui:text-error iui:bg-error-plain": error,
+					"iui:text-warning iui:bg-warning-plain": warning,
 				}
 			)}
 		>
 			{icon && (
 				<div
-					className={classnames("kl:flex kl:items-center kl:justify-center", {
-						"kl:text-front-hint kl:fill-front-hint": isDefault,
-						"kl:text-success kl:fill-success": success,
-						"kl:text-error kl:fill-error": error,
-						"kl:text-warning kl:fill-warning": warning,
+					className={classnames("iui:flex iui:items-center iui:justify-center", {
+						"iui:text-front-hint iui:fill-front-hint": isDefault,
+						"iui:text-success iui:fill-success": success,
+						"iui:text-error iui:fill-error": error,
+						"iui:text-warning iui:fill-warning": warning,
 					})}
 				>
 					<Icon icon={icon} size="large" />
 				</div>
 			)}
 
-			<div className="kl:flex kl:flex-col kl:flex-1">
-				{title && <div className="kl:font-medium">{title}</div>}
-				{children && <div className="kl:flex kl:flex-col">{children}</div>}
+			<div className="iui:flex iui:flex-col iui:flex-1">
+				{title && <div className="iui:font-medium">{title}</div>}
+				{children && <div className="iui:flex iui:flex-col">{children}</div>}
 			</div>
 
 			{suffix && <div>{suffix}</div>}

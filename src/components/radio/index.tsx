@@ -55,7 +55,7 @@ export function RadioGroup<T>({
 				warning,
 			}}
 		>
-			<div className={classnames("kl:flex kl:flex-col kl:gap-5")}>
+			<div className={classnames("iui:flex iui:flex-col iui:gap-5")}>
 				{children}
 			</div>
 		</RadioContext.Provider>
@@ -185,9 +185,9 @@ export function RadioOption<T>({
 
 	return (
 		<div
-			className={classnames(`kl:flex kl:flex-row kl:items-center kl:gap-2`, {
-				"kl:opacity-50": !enabled,
-				"kl:cursor-pointer": enabled,
+			className={classnames(`iui:flex iui:flex-row iui:items-center iui:gap-2`, {
+				"iui:opacity-50": !enabled,
+				"iui:cursor-pointer": enabled,
 			})}
 			onClick={handleClick}
 		>
@@ -201,18 +201,18 @@ export function RadioOption<T>({
 				) : (
 					<RadioIndicator
 						enabled={selected}
-						className={classnames("kl:shrink-0", {
-							"kl:text-primary": !isSuccess && !isError && !isWarning,
-							"kl:text-success": isSuccess,
-							"kl:text-error": isError,
-							"kl:text-warning": isWarning,
+						className={classnames("iui:shrink-0", {
+							"iui:text-primary": !isSuccess && !isError && !isWarning,
+							"iui:text-success": isSuccess,
+							"iui:text-error": isError,
+							"iui:text-warning": isWarning,
 						})}
 					/>
 				))}
 
-			<div className="kl:flex kl:flex-row kl:items-center kl:flex-1 kl:gap-2">
-				<div className="kl:flex-1">{el(children)}</div>
-				{suffix && <div className="kl:flex">{el(suffix)}</div>}
+			<div className="iui:flex iui:flex-row iui:items-center iui:flex-1 iui:gap-2">
+				<div className="iui:flex-1">{el(children)}</div>
+				{suffix && <div className="iui:flex">{el(suffix)}</div>}
 			</div>
 
 			{indicatorAligment == "end" &&
@@ -225,11 +225,11 @@ export function RadioOption<T>({
 				) : (
 					<RadioIndicator
 						enabled={selected}
-						className={classnames("kl:shrink-0", {
-							"kl:text-primary": !isSuccess && !isError && !isWarning,
-							"kl:text-success": isSuccess,
-							"kl:text-error": isError,
-							"kl:text-warning": isWarning,
+						className={classnames("iui:shrink-0", {
+							"iui:text-primary": !isSuccess && !isError && !isWarning,
+							"iui:text-success": isSuccess,
+							"iui:text-error": isError,
+							"iui:text-warning": isWarning,
 						})}
 					/>
 				))}

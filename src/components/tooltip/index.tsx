@@ -14,7 +14,7 @@ interface Props
 const Tooltip = ({ content, children, ...restProps }: Props) => {
 	return (
 		<HoverPopover
-			popoverClassName="kl:flex kl:flex-col kl:bg-black/70 kl:backdrop-blur-xs kl:text-white kl:px-2.5 kl:py-1 kl:rounded-control"
+			popoverClassName="iui:flex iui:flex-col iui:bg-black/70 iui:backdrop-blur-xs iui:text-white iui:px-2.5 iui:py-1 iui:rounded-control"
 			button={children}
 			{...restProps}
 		>

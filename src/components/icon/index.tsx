@@ -30,14 +30,14 @@ const Icon = ({ icon, size = "default", color }: Props) => {
 	return (
 		<div
 			className={classnames(
-				"kl:icon kl:flex kl:items-center kl:justify-center kl:leading-none",
+				"iui:icon iui:flex iui:items-center iui:justify-center iui:leading-none",
 				{
-					"kl:fill-current kl:text-current": !color,
-					"kl:w-14 kl:h-14 kl:text-5xl": size == "huge",
-					"kl:w-6 kl:h-6 kl:text-2xl": size == "large",
-					"kl:w-5 kl:h-5 kl:text-xl":
+					"iui:fill-current iui:text-current": !color,
+					"iui:w-14 iui:h-14 iui:text-5xl": size == "huge",
+					"iui:w-6 iui:h-6 iui:text-2xl": size == "large",
+					"iui:w-5 iui:h-5 iui:text-xl":
 						size == "medium" || size == "default" || size == "small",
-					"kl:w-4 kl:h-4 kl:text-base": size == "mini",
+					"iui:w-4 iui:h-4 iui:text-base": size == "mini",
 				}
 			)}
 			style={{

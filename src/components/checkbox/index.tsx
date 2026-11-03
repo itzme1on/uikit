@@ -147,9 +147,9 @@ export const Checkbox = ({
 
 	return (
 		<div
-			className={classnames(`kl:flex kl:flex-row kl:items-center kl:gap-2`, {
-				"kl:opacity-50": !enabled,
-				"kl:cursor-pointer": enabled,
+			className={classnames(`iui:flex iui:flex-row iui:items-center iui:gap-2`, {
+				"iui:opacity-50": !enabled,
+				"iui:cursor-pointer": enabled,
 			})}
 			onClick={toggleChecked}
 		>
@@ -162,11 +162,11 @@ export const Checkbox = ({
 			) : (
 				<CheckboxIndicator
 					status={status}
-					className="kl:text-primary kl:shrink-0"
+					className="iui:text-primary iui:shrink-0"
 				/>
 			)}
 
-			<div className="kl:flex kl:flex-col kl:items-center">{el()}</div>
+			<div className="iui:flex iui:flex-col iui:items-center">{el()}</div>
 		</div>
 	);
 };
@@ -207,7 +207,7 @@ export const CheckboxGroup = <T = unknown,>({
 		<CheckboxGroupContext.Provider
 			value={{ values, onChange: handleChange, disabled }}
 		>
-			<div className="kl:flex kl:flex-col kl:gap-5">{children}</div>
+			<div className="iui:flex iui:flex-col iui:gap-5">{children}</div>
 		</CheckboxGroupContext.Provider>
 	);
 };

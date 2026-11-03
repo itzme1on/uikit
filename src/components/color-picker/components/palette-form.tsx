@@ -15,7 +15,7 @@ const ColorPickerForm = ({ value, onSubmit, okayButtonText }: Props) => {
 	};
 
 	return (
-		<div className="kl:flex kl:w-full kl:flex-col kl:gap-4">
+		<div className="iui:flex iui:w-full iui:flex-col iui:gap-4">
 			<ColorPickerPalette color={color} onChange={setColor} />
 			<Button type="primary" onClick={handleSubmit}>
 				{okayButtonText}

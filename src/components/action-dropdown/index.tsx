@@ -54,20 +54,20 @@ export const ActionDropdownItem = ({
 		<div
 			onClick={handleClick}
 			className={classNames(
-				"kl:flex kl:flex-row kl:items-center kl:gap-2 kl:px-3 kl:control-height-large kl:whitespace-nowrap",
+				"iui:flex iui:flex-row iui:items-center iui:gap-2 iui:px-3 iui:control-height-large iui:whitespace-nowrap",
 				{
-					"kl:cursor-pointer": !disabled,
-					"kl:opacity-50 kl:pointer-events-none": disabled,
+					"iui:cursor-pointer": !disabled,
+					"iui:opacity-50 iui:pointer-events-none": disabled,
 
-					"kl:hover:bg-background-hover": isDefault,
-					"kl:text-primary kl:hover:bg-primary-hover": primary,
-					"kl:text-error kl:hover:bg-error-hover": error || danger,
-					"kl:text-warning kl:hover:bg-warning-hover": warning,
-					"kl:text-success kl:hover:bg-success-hover": success,
+					"iui:hover:bg-background-hover": isDefault,
+					"iui:text-primary iui:hover:bg-primary-hover": primary,
+					"iui:text-error iui:hover:bg-error-hover": error || danger,
+					"iui:text-warning iui:hover:bg-warning-hover": warning,
+					"iui:text-success iui:hover:bg-success-hover": success,
 				}
 			)}
 		>
-			<div className="kl:flex kl:flex-row kl:items-center kl:gap-2 kl:flex-1">
+			<div className="iui:flex iui:flex-row iui:items-center iui:gap-2 iui:flex-1">
 				{icon && <Icon icon={icon} />}
 				{prefix && <span>{prefix}</span>}
 				<span>{children}</span>
@@ -115,7 +115,7 @@ export const ActionDropdown = ({
 				button={button}
 				placement={placement}
 			>
-				<div className="kl:flex kl:flex-col">{children}</div>
+				<div className="iui:flex iui:flex-col">{children}</div>
 			</Dropdown>
 		</Context.Provider>
 	);

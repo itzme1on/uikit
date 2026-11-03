@@ -164,13 +164,13 @@ const TabsPanel = () => {
 	return (
 		<div
 			ref={viewportRef}
-			className="kl:flex kl:flex-row kl:overflow-x-auto kl:no-scrollbar"
+			className="iui:flex iui:flex-row iui:overflow-x-auto iui:no-scrollbar"
 			onMouseDown={onMouseDown}
 		>
 			<div
 				ref={contentRef}
-				className={classNames("kl:flex kl:flex-row", {
-					"kl:w-full kl:items-stretch": expandedTabs,
+				className={classNames("iui:flex iui:flex-row", {
+					"iui:w-full iui:items-stretch": expandedTabs,
 				})}
 			>
 				{tabs.map((tab, index) => {
