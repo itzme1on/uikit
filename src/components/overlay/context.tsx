@@ -60,7 +60,7 @@ export const OverlayProvider = ({
 		const body = document.body;
 
 		html.classList.add("iui:overflow-hidden");
-		body.classList.add("iui:overflow-hidden");
+		body.classList.add("iui:overflow-clip");
 
 		const afterWidth = body.offsetWidth;
 
@@ -72,7 +72,7 @@ export const OverlayProvider = ({
 		const body = document.body;
 
 		html.classList.remove("iui:overflow-hidden");
-		body.classList.remove("iui:overflow-hidden");
+		body.classList.remove("iui:overflow-clip");
 
 		body.removeAttribute("style");
 	};
