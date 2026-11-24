@@ -24,7 +24,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "microbundle --format esm,cjs --jsxImportSource react && tailwindcss -i src/styles/tailwind.css -o lib/styles.css --minify",
 		"dev": "NODE_ENV=dev microbundle watch --format esm,cjs --jsxImportSource react & tailwindcss -i src/styles/tailwind.css -o lib/styles.css --watch",
-		"pub": "npm run build && npm publish --access=public"
+		"pub": "git push --follow-tags"
 	},
 	"np": {
 		"publish": false,
