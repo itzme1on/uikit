@@ -24,7 +24,7 @@ const Switch = ({ value, onChange, disabled, label }: Props) => {
 			aria-disabled={disabled}
 			onClick={handleClick}
 			className={classNames(
-				"iui:p-0 iui:border-0 iui:bg-transparent iui:w-10 iui:h-10 iui:aspect-square iui:flex iui:flex-col iui:items-center iui:justify-center iui:shrink iui:cursor-pointer iui:rounded-full iui:focus-visible:outline-2 iui:focus-visible:outline-offset-2 iui:focus-visible:outline-primary",
+				"iui:p-0 iui:border-0 iui:bg-transparent iui:w-10 iui:h-10 iui:aspect-square iui:flex iui:flex-col iui:items-center iui:justify-center iui:shrink iui:cursor-pointer iui:rounded-full iui:transition-opacity iui:duration-300 iui:focus-visible:outline-2 iui:focus-visible:outline-offset-2 iui:focus-visible:outline-primary",
 				{
 					"iui:opacity-50 iui:cursor-not-allowed": disabled,
 				}
